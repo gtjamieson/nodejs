@@ -50,8 +50,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
       } else {
         sendResponse('I\'m having trouble, can you try that again?'); // Send simple response to user
       }
-    },    
-    // Talk to PANDORABOT
+    },
+    // Talk to PANDORABOT API
     'PANDORABOT': () => {
     var talkParams = {
     input: parameters.text
@@ -76,11 +76,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
               sendResponse(responseToUser);
               }
         });
-          
-          
+
+
           //end Google Translate
       }
-    });    
+    });
 
     },
 
